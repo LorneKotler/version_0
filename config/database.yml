@@ -1,0 +1,14 @@
+common: &common
+  adapter: postgresql
+
+development:
+  <<: *common
+  database: sample_app_development
+
+test:
+  <<: *common
+  database: sample_app_test
+
+production:
+  <<: *common
+  database: sample_app_production
